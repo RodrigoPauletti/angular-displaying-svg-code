@@ -1,0 +1,13 @@
+<h1>Displaying SVG Code</h1>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=RodrigoPauletti&repo=angular-displaying-svg-code&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<br/>
+
+<div class="icon-list">
+  <div class="icon-item" *ngFor="let svgIcon of svgIcons">
+    <div class="icon" [innerHTML]="svgIcon.icon | safeHtml"></div>
+    <strong>{{ svgIcon.name }}</strong>
+  </div>
+</div>

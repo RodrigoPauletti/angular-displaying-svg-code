@@ -1,0 +1,20 @@
+* {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.icon-item {
+    border: 2px solid #ccc;
+    padding: 15px;
+}
